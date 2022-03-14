@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gabriel Jardio - Portfolio</title>
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Normalize Default Browser Stylings -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <!-- Zen Maru Gothic Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+
+  <!-- My Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- Logo -->
+    <img src="img/logo.svg" class="page-header__item" alt="Gabriel Jardios own personal logo">
+    <!-- Navigation -->
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Information -->
+    <h1>Contact</h1>
+    <div>
+      455 Karen Drive<br>
+      Apt. 306E<br>
+      Woodbury MN, 55129<br>
+      <br>
+      <a href="tel:6122127374">Tel: 612-212-7374</a><br>
+      <a href="mailto:gabejardio@gmail.com">Email: gabejardio@gmail.com</a><br>
+      <a href="mailto:gabejardio@gmail.com">Contact me</a>
+    </div>
+    <!-- Contact Form -->
+    <h2>Contact Form</h2>
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required><br>
+
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" id="contact-tel"><br>
+
+      <label class="standard-label" for="contact-message">Message: </label>
+      <textarea maxlength="240" id="contact-message" required></textarea><br>
+
+      <input type="submit" value="Send message">
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <!-- Networking Links -->
+    <p>Find me on</p>
+    <div class="social-media">
+      <img src="img/github_icon.svg" alt="Github Icon">
+      <img src="img/linkedin_icon.svg" alt="LinkedIn Icon">
+    </div>
+  </footer>
+
+  <!-- Javascript Plugins -->
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

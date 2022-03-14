@@ -1,0 +1,338 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+
+body {
+  /* Font and Typography */
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.6;
+
+  /* Background and Text Color */
+  background-color: #002642;
+  color: #ffe3dc;
+
+  /*Center all my text elements */
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+table {
+  margin: auto;
+}
+
+a {
+  color: #9b96b0;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+}
+
+a:hover, a:focus {
+  font-size: 28px;
+}
+
+a:active {
+  color: #c8c4d4;
+}
+
+#homepagelink {
+  text-decoration: underline;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #b8335a;
+  color: #ffe3dc;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.9s, font-size 0.9s;
+  -o-transition: background-color 0.9s, font-size 0.9s;
+  transition: background-color 0.9s, font-size 0.9s;
+
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #b8335a;
+  color: #ffe3dc;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.9s, font-size 0.9s;
+  -o-transition: background-color 0.9s, font-size 0.9s;
+  transition: background-color 0.9s, font-size 0.9s;
+
+}
+
+button:hover {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  background-color: #ca3f79;
+  font-size: 27px;
+  text-decoration: none;
+}
+
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  background-color: #ca3f79;
+  font-size: 27px;
+  text-decoration: none;
+}
+
+.button:hover {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  background-color: #ca3f79;
+  font-size: 27px;
+  text-decoration: none;
+}
+
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  background-color: #ca3f79;
+  font-size: 27px;
+  text-decoration: none;
+}
+
+/* Used Flexbox for Header */
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  /*border-bottom: 2px solid rgba(255, 227, 220, 0.1);*/
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header__item:first-child{
+  margin-left: 20px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navigation-list__item {
+  text-decoration: none;
+}
+
+.navigation-list__item--active {
+  color: #c8c4d4;
+  font-size: 28px;
+}
+
+/* Used Flexbox for Footer*/
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+/*Used CSS grid for Work page*/
+
+/* Grid Fallback */
+.project-list__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* If Grid Supported */
+@supports (display: grid) {
+  .project-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .project-list__item {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    background-color: black; /* temporary to see grid sizes */
+  }
+
+  .project-list__item:last-child {
+    -ms-grid-column: 4;
+    grid-column: 4 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+
+}
+
+/* If Screen Width <= 750px */
+@media all and (max-width: 750px) {
+  .project-list {
+    grid-gap: 10px;
+  }
+
+  .project-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* If 500 px >= Screen Width <= 750px */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .project-list {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* If Screen Width <= 500px */
+@media all and (max-width: 500px) {
+  .project-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+#svgattribute {
+  font-size:13px;
+}
+
+/* Animation for about page illustration */
+
+@-webkit-keyframes counterclockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+#path81, #path67 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 5s counterclockwise infinite normal linear;
+          animation: 5s counterclockwise infinite normal linear;
+}
+
+#path83, #path75 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 5s clockwise infinite normal linear;
+          animation: 5s clockwise infinite normal linear;
+}
