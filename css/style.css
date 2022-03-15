@@ -33,6 +33,10 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 table {
   margin: auto;
 }
@@ -56,7 +60,7 @@ a:active {
   text-decoration: underline;
 }
 
-button, .button {
+button, .button, input[type=submit] {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -75,7 +79,7 @@ button, .button {
 
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .button:focus, input[type=submit]:hover, input[type=submit]:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   background-color: var(--lighter-button-color);
@@ -241,3 +245,50 @@ button:hover, button:focus, .button:hover, .button:focus {
   transform-origin: center;
   animation: 5s clockwise infinite normal linear;
 }
+
+/*--- Contact Form Styling ---*/
+
+form {
+  background-color: #001e34;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  padding-top: 0px;
+  border-radius: 5%;
+  /* box-shadow: 0px 15px 1px rgba(0,0,0.6); */
+}
+
+label {
+  float: left;
+}
+
+#contact-email, #contact-tel {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  outline: none;
+  color: var(--text-color);
+  font-weight: var(--font-weight-light);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 1.5;
+
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-weight: var(--font-weight-light);
+  max-width: 440px;
+  font-size: 20px;
+  resize: none;
+  outline: none;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+}
+
+
