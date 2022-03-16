@@ -135,6 +135,12 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
+#footerlink1, #footerlink1:hover, #footerlink1:active, #footerlink1:focus
+#footerlink2, #footerlink2:hover, #footerlink2:active, #footerlink2:focus {
+  all: initial;
+  cursor: pointer;
+}
+
 .profile {
   max-width: 700px;
   margin: 150px auto;
@@ -290,5 +296,7 @@ textarea {
   border: 1px solid var(--text-color);
   border-radius: 5px;
 }
+
+
 
 
