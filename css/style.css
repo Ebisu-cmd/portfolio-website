@@ -60,7 +60,7 @@ a:active {
   text-decoration: underline;
 }
 
-button, .button, input[type=submit] {
+button, .button{
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -79,7 +79,7 @@ button, .button, input[type=submit] {
 
 }
 
-button:hover, button:focus, .button:hover, .button:focus, input[type=submit]:hover, input[type=submit]:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   background-color: var(--lighter-button-color);
@@ -168,7 +168,7 @@ button:hover, button:focus, .button:hover, .button:focus, input[type=submit]:hov
     width: auto;
     min-height: auto;
     margin: 0;
-    background-color: black; /* temporary to see grid sizes */
+    /* background-color: black; temporary to see grid sizes */
   }
 
   .project-list__item:last-child {
