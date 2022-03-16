@@ -3,6 +3,7 @@ The main purpose of this project is to create a portfolio website that shows inf
 
 # Build-Status
 List of things I want to add/consider:
+* Clean up Code/Comments
 * Advanced animations for nav bar
 * More animations for graphic in the about page
 * Animation for Contact Me form in contact page
