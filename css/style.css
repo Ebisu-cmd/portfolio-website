@@ -141,8 +141,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
-#footerlink1, #footerlink1:hover, #footerlink1:active, #footerlink1:focus
-#footerlink2, #footerlink2:hover, #footerlink2:active, #footerlink2:focus {
+.footerlink, .footerlink:hover, .footerlink:active, .footerlink:focus {
   all: initial;
   cursor: pointer;
 }
