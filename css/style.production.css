@@ -25,6 +25,7 @@ body {
  text-align: center;
 }
 
+/*--- Styling for header elements ---*/
 h1 {
  font-size: 40px;
 }
@@ -33,7 +34,7 @@ h2 {
  font-size: 30px;
 }
 
-/* Styling for table in about page  -----------------------*/
+/* --- Styling for table in about page ---*/
 table {
  margin: auto;
  padding: 10px;
@@ -43,6 +44,7 @@ th, td {
  padding: 7px;
 }
 
+/*--- Styling for links in the website ---*/
 a {
  color: #9b96b0;
  font-weight: 500;
@@ -64,6 +66,7 @@ a:active {
  text-decoration: underline;
 }
 
+/*--- Styling for buttons in the website ---*/
 button{
  /* overwrites browser defaults and resets the border */
  border: none;
@@ -84,7 +87,6 @@ button{
  transition: background-color 0.9s, font-size 0.9s;
 
 }
-
 .button{
  /* overwrites browser defaults and resets the border */
  border: none;
@@ -138,7 +140,7 @@ button:focus {
  text-decoration: none;
 }
 
-/* Used Flexbox for Header */
+/*--- Used Flexbox for Header ---*/
 .page-header {
  display: -webkit-box;
  display: -ms-flexbox;
@@ -184,7 +186,7 @@ button:focus {
  font-size: 28px;
 }
 
-/* Used Flexbox for Footer*/
+/*---  Used Flexbox for Footer ---*/
 .page-footer {
  clear: both;
  display: -webkit-box;
@@ -202,6 +204,7 @@ button:focus {
  cursor: pointer;
 }
 
+/*--- Styling for content in home page ---*/
 .profile {
  max-width: 700px;
  margin: 150px auto;
@@ -215,7 +218,7 @@ button:focus {
  border-radius: 50%;
 }
 
-/*Used CSS grid for Work page*/
+/*--- Used CSS grid for Work page ---*/
 
 /* Grid Fallback */
 .project-list__item {
@@ -282,12 +285,13 @@ button:focus {
  }
 }
 
+
+/*--- Font size for attribution of SVG illustration on about page ---*/
 #svgattribute {
  font-size:13px;
 }
 
-/* Animation for about page illustration */
-
+/*--- Animation for about page illustration ---*/
 @-webkit-keyframes counterclockwise {
  0% {
    -webkit-transform: rotate(0deg);
@@ -298,7 +302,6 @@ button:focus {
            transform: rotate(360deg);
  }
 }
-
 @keyframes counterclockwise {
  0% {
    -webkit-transform: rotate(0deg);
@@ -353,7 +356,6 @@ button:focus {
 }
 
 /*--- Contact Form Styling ---*/
-
 form {
  background-color: #001e34;
  max-width: 500px;
