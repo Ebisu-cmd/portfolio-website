@@ -118,10 +118,12 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation-list li {
-  display: inline-block;
+  display: flex;
   margin-left: 15px;
   margin-right: 15px;
 }
