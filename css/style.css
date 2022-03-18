@@ -119,6 +119,7 @@ button:focus,
 .navigation-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
