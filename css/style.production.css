@@ -139,6 +139,8 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .page-header__item {
@@ -148,6 +150,7 @@ button:focus {
 }
 
 .page-header__item:first-child {
+  min-height: 0;
   margin-left: 20px;
 }
 
