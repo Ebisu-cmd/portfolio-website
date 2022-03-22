@@ -293,7 +293,7 @@ button:focus {
 }
 
 /* --- Animation for about page illustration --- */
-@-webkit-keyframes counterclockwise {
+@-webkit-keyframes counterClockwise {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -304,7 +304,7 @@ button:focus {
             transform: rotate(360deg);
   }
 }
-@keyframes counterclockwise {
+@keyframes counterClockwise {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -340,6 +340,98 @@ button:focus {
   }
 }
 
+@-webkit-keyframes starShimmer {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50%{
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+}
+
+@keyframes starShimmer {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50%{
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+}
+
+@-webkit-keyframes starShimmer2{
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50%{
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes starShimmer2{
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50%{
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes shootingStar {
+  0% {
+    -webkit-transform: translate(-10000px);
+            transform: translate(-10000px);
+  }
+
+  100% {
+    -webkit-transform: translate(10000px);
+            transform: translate(10000px);
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    -webkit-transform: translate(-10000px);
+            transform: translate(-10000px);
+  }
+
+  100% {
+    -webkit-transform: translate(10000px);
+            transform: translate(10000px);
+  }
+}
+
 #path81,
 #path67 {
   display: inline-block;
@@ -347,8 +439,8 @@ button:focus {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: 5s counterclockwise infinite normal linear;
-          animation: 5s counterclockwise infinite normal linear;
+  -webkit-animation: 5s counterClockwise infinite normal linear;
+          animation: 5s counterClockwise infinite normal linear;
 }
 
 #path83,
@@ -360,6 +452,52 @@ button:focus {
           transform-origin: center;
   -webkit-animation: 5s clockwise infinite normal linear;
           animation: 5s clockwise infinite normal linear;
+}
+
+#path197,
+#path193 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 10s starShimmer infinite alternate ease-in-out;
+          animation: 10s starShimmer infinite alternate ease-in-out;
+}
+
+#path189,
+#path185,
+#path181 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 5s starShimmer2 infinite alternate ease-in-out;
+          animation: 5s starShimmer2 infinite alternate ease-in-out;
+}
+
+#path187,
+#path195,
+#path179 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 8s shootingStar infinite normal linear;
+          animation: 8s shootingStar infinite normal linear;
+}
+
+#path191,
+#path183 {
+  display: inline-block;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 15s shootingStar infinite normal linear;
+          animation: 15s shootingStar infinite normal linear;
 }
 
 /* --- Contact Form Styling --- */
