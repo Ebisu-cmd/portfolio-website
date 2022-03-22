@@ -232,7 +232,7 @@ button:focus,
 }
 
 /* --- Animation for about page illustration --- */
-@keyframes counterclockwise {
+@keyframes counterClockwise {
   0% {
     transform: rotate(0deg);
   }
@@ -252,12 +252,40 @@ button:focus,
   }
 }
 
+@keyframes starShimmer {
+  0% {
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(3.5);
+  }
+}
+
+@keyframes starShimmer2{
+  0% {
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(3.5);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
 #path81,
 #path67 {
   display: inline-block;
   transform-box: fill-box;
   transform-origin: center;
-  animation: 5s counterclockwise infinite normal linear;
+  animation: 5s counterClockwise infinite normal linear;
 }
 
 #path83,
@@ -266,6 +294,23 @@ button:focus,
   transform-box: fill-box;
   transform-origin: center;
   animation: 5s clockwise infinite normal linear;
+}
+
+#path197,
+#path193 {
+  display: inline-block;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 5s starShimmer infinite alternate ease-in-out;
+}
+
+#path189,
+#path185,
+#path181 {
+  display: inline-block;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 5s starShimmer2 infinite alternate ease-in-out;
 }
 
 /* --- Contact Form Styling --- */
