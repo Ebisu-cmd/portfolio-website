@@ -524,7 +524,7 @@ label {
   color: #ffe3dc;
   font-weight: 300;
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   font-size: 22px;
   line-height: 1.5;
@@ -538,7 +538,7 @@ label {
   color: #ffe3dc;
   font-weight: 300;
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   font-size: 22px;
   line-height: 1.5;
@@ -556,4 +556,9 @@ textarea {
   outline: none;
   border: 1px solid #ffe3dc;
   border-radius: 5px;
+}
+
+.error-message {
+  font-size: 15px;
+  font-style: italic;
 }

@@ -364,7 +364,7 @@ label {
   color: var(--text-color);
   font-weight: var(--font-weight-light);
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   font-size: 22px;
   line-height: 1.5;
@@ -382,4 +382,9 @@ textarea {
   outline: none;
   border: 1px solid var(--text-color);
   border-radius: 5px;
+}
+
+.error-message {
+  font-size: 15px;
+  font-style: italic;
 }
