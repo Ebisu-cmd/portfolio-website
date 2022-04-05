@@ -17,5 +17,6 @@ List of things I want to add/consider:
 # Technology Used
 * CSS
 * HTML
+* JavaScript
 * Flexbox
 * CSS Grid
